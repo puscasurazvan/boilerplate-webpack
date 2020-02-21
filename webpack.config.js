@@ -53,6 +53,9 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: isDevelopment ? false : true,
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
